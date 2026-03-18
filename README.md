@@ -18,7 +18,7 @@ The main objective of this project is to:
 - Automate repetitive analysis by creating stored procedures.
 - Build reusable queries to generate quick reports for different business needs.
 - Help the product owner make data-driven decisions for product, market, and customer strategy.
-- 
+  
 ## Datasets Used
 This project uses multiple tables from the AtliQ Hardwares database (gdb0041) to perform ad-hoc business analysis and reporting.
 
