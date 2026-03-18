@@ -196,36 +196,38 @@ Then, I updated all NULL values to 0, as instructed by the product owner.
 ### Transformed table preview (fact_act_est):
 ![fact_act_est Table](Resources/fact_act_est.png)
 
-🧩 Stored Procedure
+### Stored Procedure
 After preparing the data, I created a stored procedure to calculate forecast accuracy for each customer.
 It takes the fiscal year as input and outputs the forecast accuracy % based on total forecast and actual sales data.
 
-🔗 View Stored Procedure Query
+🔗 [View Stored Procedure Query](Queries/adhoc_7_stored_proc_for_get_forecast_accuracy.sql)
 
-🖥️ Procedure Execution
-📥 Input: Fiscal Year (e.g., 2021)
-Input
+### Procedure Execution
 
-📤 Output: Forecast accuracy report with all customer details
-Output
+Input: Fiscal Year (e.g., 2021)
 
-💡 Key Insight
+![Input](Resources/adhoc_7_stored_proc_for_get_forecast_accuracy.png)
+
+Output: Forecast accuracy report with all customer details
+![Output](Resources/adhoc_7_stored_proc_for_get_forecast_accuracy2.png)
+
+### 💡 Key Insight
 This stored procedure automates the forecast accuracy calculation and ensures that product owners can easily monitor prediction performance for each customer.
 It helps identify gaps between actual and forecasted sales, allowing the business to improve its planning and forecasting models.
 
-🏁 Conclusion
+# Conclusion
 Through this SQL project, I explored a series of real-world ad-hoc business requests and delivered insights that a product owner or analyst would typically need.
 
 Each request focused on solving a specific business problem — from sales performance and forecast accuracy to market share tracking — using
 SQL queries, CTEs (Common Table Expressions), joins, stored procedures, and aggregate functions.
 
-💡 Key Learnings
+## 💡 Key Learnings
 This project helped me strengthen my ability to:
 
-🧩 Write clean, modular SQL queries for analytical needs
-🔗 Use joins, subqueries, CTEs, and stored procedures effectively
-📊 Translate business questions into data-driven insights
-📈 Final Takeaway
+- Write clean, modular SQL queries for analytical needs
+- Use joins, subqueries, CTEs, and stored procedures effectively
+- Translate business questions into data-driven insights
+## Final Takeaway
 This project represents how a data analyst would handle, analyze, and present business data using SQL in a real-world environment.
 
 ✅ This concludes the Ad Hoc Analysis Project for AtliQ Hardwares.
