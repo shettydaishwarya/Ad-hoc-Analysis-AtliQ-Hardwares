@@ -108,114 +108,93 @@ Below is the sample output for market Inadia for fiscal_year 2021:
 ![Input](Resources/adhoc_3_stored_proc_out_put.png)
 ![Output](Resources/adhoc_3_stored_proc_out_put2.png)
 
-🧩 Ad Hoc Request 4 — Top Markets, Products, and Customers by Net Sales
-📄 Problem Statement
+## Ad Hoc Request 4 — Top Markets, Products, and Customers by Net Sales
+### Problem Statement
 As a product owner, I want a report for top markets, products, and customers by net sales for a given financial year.
 This will help provide a holistic view of AtliQ's financial performance and enable better business decisions.
 
-🧱 Step 1: Creating the Net Sales View
+### Step 1: Creating the Net Sales View
 Before creating stored procedures, I built a Net Sales View that combines necessary data (e.g., gross sales, discounts, and other adjustments) into one clean, reusable table.
 
-📸 View structure preview:
-Net Sales View
+### View structure preview:
+![Net Sales View](Resources/netsales_table.jpg)
 
-⚙️ Step 2: Stored Procedures for Analysis
+### Step 2: Stored Procedures for Analysis
 I created three separate stored procedures to fetch the top markets, top products, and top customers for any given financial year.
 
-🥇 Stored Procedure 1 — Top Markets by Net Sales
-🔗 View Query
+### Stored Procedure 1 — Top Markets by Net Sales
+🔗 [View Query](Queries/adhoc_4_stored_proc_for_get_top_n_markets_by_netsales.sql)
 
 📊 Below is the sample output when fiscal_year = 2021 and top_n = 3:
-Input Output
+![Input](Resources/adhoc_4_get_top_n_markets_by_netsales.png)
+![Output](Resources/adhoc_4_get_top_n_markets_by_netsales2.png)
 
-🧴 Stored Procedure 2 — Top Products by Net Sales
-🔗 View Query
+### Stored Procedure 2 — Top Products by Net Sales
+🔗 [View Query](Queries/adhoc_4_stored_proc_for_get_top_n_products_by_netsales.sql)
 
-📊 Below is the sample output when fiscal_year = 2021 and top_n = 5
-Input Output
+### 📊 Below is the sample output when fiscal_year = 2021 and top_n = 5
+![Input](Resources/adhoc_4_get_top_n_products_by_netsales.png)
+![Output](Resources/adhoc_4_get_top_n_products_by_netsales2.png)
 
-👥 Stored Procedure 3 — Top Customers by Net Sales
-🔗 View Query
+### Stored Procedure 3 — Top Customers by Net Sales
+🔗 [View Query](Queries/adhoc_4_stored_proc_for_get_top_n_customers_by_netsales.sql)
 
-📊 Below is the sample output when fiscal_year = 2021 and top_n = 5:
-Input Output
+### 📊 Below is the sample output when fiscal_year = 2021 and top_n = 5:
+![Input](Resources/adhoc_4_get_top_n_customers_by_netsales.png)
+![Output](Resources/adhoc_4_get_top_n_customers_by_netsales2.png)
 
-💡 Key Insight
+### 💡 Key Insight
 By modularizing these stored procedures, we can reuse them across different dashboards or analysis tasks without rewriting the logic.
 This approach ensures consistency, maintainability, and automation in reporting.
 
-🌍 Ad Hoc Request 5 — Net Sales % Share (Global)
-📄 Problem Statement
-As a product owner, I want to see a bar chart report for FY-2021 showing the top 10 markets by % Net Sales.
-It should look something like this 👇
-(The sample shared by the product owner was based on top customers instead of markets.) 📸 Reference Chart Provided:
-Adhoc 5 Sample Chart
-
-🧠 Step 1: SQL Query
-To calculate the Net Sales % share, I wrote a SQL query that finds the top customers for FY-2021 based on their contribution to total Net Sales.
-
-🔗 View SQL Query
-
-📊 Step 2: Query Output
-Below is the SQL output, which shows the top customers along with their net sales percentage share.
-
-📸 Sample Output:
-Adhoc 5 Output
-
-📈 Step 3: Visualization
-After verifying the results, I exported the data to Excel and created a bar chart to visualize the top 10 customers by % net sales for FY-2021.
-
-📸 Excel Chart Preview:
-Adhoc 5 Excel Chart
-
-💡 Key Insight
-The analysis highlights which customers contributed the most to the company’s total net sales in FY-2021, helping identify top revenue drivers for better business planning.
-
-🧾 Ad Hoc Request 6 — Top N Products by Quantity Sold (Per Division)
-📄 Problem Statement
+## Ad Hoc Request 6 — Top N Products by Quantity Sold (Per Division)
+## Problem Statement
 As a product owner, I want to get the Top N products in each division based on their quantity sold for a given financial year.
 This helps analyze which products are performing best within each division.
 
-⚙️ Stored Procedure
+## ⚙️ Stored Procedure
 To make this reusable, I created a stored procedure that dynamically takes two inputs:
 
 in_fiscal_year → Financial year to analyze
 in_top_n → Number of top products to display per division
-🔗 View Stored Procedure Query
 
-🧩 Input Example
-📸 Passing parameters to the stored procedure:
-Input
+🔗 [View Stored Procedure Query](Queries/adhoc_6_stored_proc_for_get_top_n_products_by_division_by_sold_qty.sql)
 
-📊 Output Preview
-📸 Generated output showing top N products by division:
-Output
+### Input Example
+Passing parameters to the stored procedure:
+![Input](Resources/adhoc_6_stored_proc_get_top_n_products_by_division_by_sold_qty.png)
 
-💡 Key Insight
+### 📊 Output Preview
+Generated output showing top N products by division:
+![Output](Resources/adhoc_6_stored_proc_get_top_n_products_by_division_by_sold_qty2.png)
+
+### 💡 Key Insight
 This stored procedure helps quickly identify best-performing products within each division, reducing manual effort and improving decision-making for inventory and sales strategy.
 
-🧾 Ad Hoc Request 7 — Forecast Accuracy for All Customers
-📄 Problem Statement
+## Ad Hoc Request 7 — Forecast Accuracy for All Customers
+### Problem Statement
 As a product owner, I need an aggregate forecast accuracy report for all customers for a given fiscal year, so that I can track how accurate our forecasts are compared to actual sales.
 
 The report includes the following fields:
 
-Customer Code, Name, Market
-Total Sold Quantity
-Total Forecast Quantity
-Net Error
-Absolute Error
-Forecast Accuracy %
-⚙️ Data Preparation
+- Customer Code, Name, Market
+- Total Sold Quantity
+- Total Forecast Quantity
+- Net Error
+- Absolute Error
+- Forecast Accuracy %
+
+### ⚙️ Data Preparation
 To achieve this, I first created a new table called fact_act_est by combining both fact_sales_monthly and fact_forecast_monthly tables.
 
 I used LEFT JOIN and RIGHT JOIN to ensure we include customers who had sales but no forecast and forecast but no sales.
 This ensures no data is missed.
 Then, I updated all NULL values to 0, as instructed by the product owner.
-🔗 View Table Creation & Data Cleaning Queries
 
-📸 Transformed table preview (fact_act_est):
-fact_act_est Table
+🔗 [View Table Creation & Data Cleaning Queries](Queries/adhoc_7_query_used_to_create_the_fact_act_est_table.sql)
+
+### Transformed table preview (fact_act_est):
+![fact_act_est Table](Resources/fact_act_est.png)
 
 🧩 Stored Procedure
 After preparing the data, I created a stored procedure to calculate forecast accuracy for each customer.
