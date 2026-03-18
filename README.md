@@ -32,9 +32,11 @@ fact_freight_cost	Details of transportation and freight costs for product delive
 fact_manufacturing_cost	Manufacturing cost details for each product.
 fact_pre_invoice_deductions	Pre-invoice deduction data like discounts and offers.
 fact_post_invoice_deductions	Post-invoice deductions such as credit notes or returns.
+
 📸 Dataset Preview
+
 (Database tables from gdb0041)
-Dataset Preview
+Resources/Capture4.PNG
 
 🧩 Ad Hoc Request 1 — Croma India Product-wise Sales Report (FY 2021)
 📄 Problem Statement
