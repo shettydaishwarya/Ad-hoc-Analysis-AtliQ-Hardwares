@@ -59,20 +59,22 @@ Provide visibility into sales quantity and revenue trends.
 Below is a snapshot of the output (partial view due to large dataset):
 ![Output](Resources/adhoc1_output.png.png)
 
-🧩 Ad Hoc Request 2 — Gross Monthly Total Sales Report for Croma
-📄 Problem Statement
+## Ad Hoc Request 2 — Gross Monthly Total Sales Report for Croma
+### Problem Statement
 As a product owner, I need an aggregate monthly gross sales report for Croma India so that I can track how much sales this particular customer is generating for AtliQ Hardwares and manage our relationship accordingly.
 
-🎯 Objective
+### Objective
 Calculate the total monthly gross sales amount for Croma India.
 Understand customer contribution to overall sales.
 Enable data-driven decisions for partnership management.
-🧠 SQL Query Used
-🔗 View SQL Query
+### SQL Query Used
 
-📊 Output Preview
+🔗 [View SQL Query](Queries/adhoc_2_croma_monthly_gross_sales_report.sql)
+
+### 📊 Output Preview
 Below is a snapshot of the output (partial view):
-Output
+
+![Output](Resources/adhoc_2_output.png)
 
 ⚙️ Stored Procedure Automation
 Here you can see — this task was quite repetitive.
