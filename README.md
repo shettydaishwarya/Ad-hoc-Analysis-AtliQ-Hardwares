@@ -37,27 +37,27 @@ This project uses multiple tables from the AtliQ Hardwares database (gdb0041) to
 | fact_pre_invoice_deductions  | Pre-invoice deduction data like discounts and offers.                                 |
 | fact_post_invoice_deductions | Post-invoice deductions such as credit notes or returns.                              |
 
-📸 Dataset Preview
+## Dataset Preview
 
 (Database tables from gdb0041)
 
 ![Dataset Preview](Resources/Capture4.PNG)
 
-🧩 Ad Hoc Request 1 — Croma India Product-wise Sales Report (FY 2021)
-📄 Problem Statement
+## Ad Hoc Request 1 — Croma India Product-wise Sales Report (FY 2021)
+### Problem Statement
 As a product owner, I want to generate a report of individual product sales (aggregated on a monthly basis at the product code level) for Croma India customer for FY 2021,
 so that I can track product-level performance and run further analytics in Excel.
 
-🎯 Objective
+### Objective
 Analyze monthly sales for each product under Croma India.
 Identify high-performing products and variants.
 Provide visibility into sales quantity and revenue trends.
-🧠 SQL Query Used
-🔗 View SQL Query
+### SQL Query Used
+🔗 [View SQL Query](Queries/adhoc_1_croma_product_sales.sql)
 
-📊 Output Preview
+### 📊 Output Preview
 Below is a snapshot of the output (partial view due to large dataset):
-Output
+[Output]
 
 🧩 Ad Hoc Request 2 — Gross Monthly Total Sales Report for Croma
 📄 Problem Statement
