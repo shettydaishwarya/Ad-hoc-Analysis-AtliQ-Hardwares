@@ -36,7 +36,8 @@ fact_post_invoice_deductions	Post-invoice deductions such as credit notes or ret
 📸 Dataset Preview
 
 (Database tables from gdb0041)
-Resources/Capture4.PNG
+
+![Dataset Preview](Resources/Capture4.PNG)
 
 🧩 Ad Hoc Request 1 — Croma India Product-wise Sales Report (FY 2021)
 📄 Problem Statement
