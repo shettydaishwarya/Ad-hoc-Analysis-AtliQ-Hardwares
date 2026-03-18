@@ -76,19 +76,20 @@ Below is a snapshot of the output (partial view):
 
 ![Output](Resources/adhoc_2_output.png)
 
-⚙️ Stored Procedure Automation
+### ⚙️ Stored Procedure Automation
 Here you can see — this task was quite repetitive.
 Because tomorrow the product owner might ask for the same report for Amazon or eBay, I created a stored procedure called
 get_monthly_gross_sales_for_customer.
 
 Now, by simply entering the customer code, the report is automatically generated — no need to rewrite the query every time.
 
-🧠 Stored Procedure Query
-🔗 View SQL Query Stored Procedure
+### Stored Procedure Query
+🔗 [View SQL Query Stored Procedure](Queries/adhoc_2_stored_proc_get_monthly_gross_sales_report.sql)
 
-📊 Sample Output (Amazon Example)
+### 📊 Sample Output (Amazon Example)
 Below is an example of the stored procedure output when the input is set for Amazon:
-Iutput Output
+![Input](Resources/adhoc_2_stored_proc_get_monthly_gross_sales_report.png) 
+![Output](Resources/adhoc_2_stored_proc_get_monthly_gross_sales_report2.png)
 
 🧩 Ad Hoc Request 3 — Market Badge Stored Procedure
 📄 Problem Statement
