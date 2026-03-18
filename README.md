@@ -49,9 +49,9 @@ As a product owner, I want to generate a report of individual product sales (agg
 so that I can track product-level performance and run further analytics in Excel.
 
 ### Objective
-Analyze monthly sales for each product under Croma India.
-Identify high-performing products and variants.
-Provide visibility into sales quantity and revenue trends.
+- Analyze monthly sales for each product under Croma India.
+- Identify high-performing products and variants.
+- Provide visibility into sales quantity and revenue trends.
 ### SQL Query Used
 🔗 [View SQL Query](Queries/adhoc_1_croma_product_sales.sql)
 
@@ -64,9 +64,9 @@ Below is a snapshot of the output (partial view due to large dataset):
 As a product owner, I need an aggregate monthly gross sales report for Croma India so that I can track how much sales this particular customer is generating for AtliQ Hardwares and manage our relationship accordingly.
 
 ### Objective
-Calculate the total monthly gross sales amount for Croma India.
-Understand customer contribution to overall sales.
-Enable data-driven decisions for partnership management.
+- Calculate the total monthly gross sales amount for Croma India.
+- Understand customer contribution to overall sales.
+- Enable data-driven decisions for partnership management.
 ### SQL Query Used
 
 🔗 [View SQL Query](Queries/adhoc_2_croma_monthly_gross_sales_report.sql)
@@ -91,21 +91,22 @@ Below is an example of the stored procedure output when the input is set for Ama
 ![Input](Resources/adhoc_2_stored_proc_get_monthly_gross_sales_report.png) 
 ![Output](Resources/adhoc_2_stored_proc_get_monthly_gross_sales_report2.png)
 
-🧩 Ad Hoc Request 3 — Market Badge Stored Procedure
-📄 Problem Statement
+## Ad Hoc Request 3 — Market Badge Stored Procedure
+### Problem Statement
 As a product owner, I want to create a stored procedure that determines the market badge based on total sold quantity.
 If the total sold quantity exceeds 5 million units, the market is considered Gold; otherwise, it is Silver.
 
-🎯 Objective
-Categorize markets as Gold or Silver based on total sales volume.
-Enable quick classification by market and fiscal year.
-Simplify repetitive reporting through automation.
-⚙️ Stored Procedure Query
-🔗 View SQL Query
+### Objective
+- Categorize markets as Gold or Silver based on total sales volume.
+- Enable quick classification by market and fiscal year.
+- Simplify repetitive reporting through automation.
+### ⚙️ Stored Procedure Query
+🔗 [View SQL Query](Queries/adhoc_3_stored_proc_for_market_badge.sql)
 
-📊 Output Preview
+### 📊 Output Preview
 Below is the sample output for market Inadia for fiscal_year 2021:
-Input Output
+![Input](Resources/adhoc_3_stored_proc_out_put.png)
+![Output](Resources/adhoc_3_stored_proc_out_put2.png)
 
 🧩 Ad Hoc Request 4 — Top Markets, Products, and Customers by Net Sales
 📄 Problem Statement
