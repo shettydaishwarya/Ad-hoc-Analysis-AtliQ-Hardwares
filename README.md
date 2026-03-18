@@ -41,7 +41,7 @@ This project uses multiple tables from the AtliQ Hardwares database (gdb0041) to
 
 (Database tables from gdb0041)
 
-![Dataset Preview](Resources/Capture4.PNG)
+![Dataset Preview](Resources/datasets.png)
 
 ## Ad Hoc Request 1 — Croma India Product-wise Sales Report (FY 2021)
 ### Problem Statement
@@ -57,7 +57,7 @@ Provide visibility into sales quantity and revenue trends.
 
 ### 📊 Output Preview
 Below is a snapshot of the output (partial view due to large dataset):
-[Output]
+![Output](Resources/adhoc1_output.png.png)
 
 🧩 Ad Hoc Request 2 — Gross Monthly Total Sales Report for Croma
 📄 Problem Statement
