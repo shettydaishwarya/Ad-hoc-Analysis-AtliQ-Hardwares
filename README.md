@@ -1,7 +1,7 @@
 # Ad-hoc-Analysis-AtliQ-Hardwares-
 SQL Ad-hoc Analysis Project for AtliQ Hardwares using MySQL
 
-🎥 Watch Video Explanation : https://youtu.be/cDtLC7lCQw0
+## [Watch Video Presentation](https://youtu.be/cDtLC7lCQw0)
 
 ## Problem Statement
 AtliQ Hardwares is a computer hardware manufacturing company that sells products globally through various channels like Amazon, Croma, and Best Buy. AtliQ Hardwares,relied completely on Excel to manage its growing business. As sales and revenue increased, their Excel files became larger and harder to handle — until one day, their key business planning file crashed beyond recovery.
