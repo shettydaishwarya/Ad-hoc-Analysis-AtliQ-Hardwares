@@ -147,7 +147,7 @@ I created three separate stored procedures to fetch the top markets, top product
 By modularizing these stored procedures, we can reuse them across different dashboards or analysis tasks without rewriting the logic.
 This approach ensures consistency, maintainability, and automation in reporting.
 
-## Ad Hoc Request 6 — Top N Products by Quantity Sold (Per Division)
+## Ad Hoc Request 5 — Top N Products by Quantity Sold (Per Division)
 ## Problem Statement
 As a product owner, I want to get the Top N products in each division based on their quantity sold for a given financial year.
 This helps analyze which products are performing best within each division.
@@ -171,7 +171,7 @@ Generated output showing top N products by division:
 ### 💡 Key Insight
 This stored procedure helps quickly identify best-performing products within each division, reducing manual effort and improving decision-making for inventory and sales strategy.
 
-## Ad Hoc Request 7 — Forecast Accuracy for All Customers
+## Ad Hoc Request 6 — Forecast Accuracy for All Customers
 ### Problem Statement
 As a product owner, I need an aggregate forecast accuracy report for all customers for a given fiscal year, so that I can track how accurate our forecasts are compared to actual sales.
 
